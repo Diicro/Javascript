@@ -18,7 +18,8 @@ body{
     text-align: center;
     font-size: 32px;
     background-color: #A7C3F0;
-}header {
+}
+header {
     display: flex;
     justify-content: space-between;
     align-items: center;
