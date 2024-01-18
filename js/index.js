@@ -14,10 +14,9 @@ if(!localStorage.getItem("usuario")){
 // const PRD2=new NuevoProducto("Perro con disfraz de fantasma","./Assets/Fantasma.jpg")
 // const PRD3=new NuevoProducto("Perro con saco negro","./Assets/Saco.jpg")
 
-const card= document.getElementById("pcard");
+// const card= document.getElementById("pcard");
 
-card.innerHTML=`
-<section class="card">
-<a><img  src="" alt=""></a>
-</section>
-`
+// card.innerHTML=`
+// <section class="card">
+// <a><img  src="" alt=""></a>
+// </section>`
