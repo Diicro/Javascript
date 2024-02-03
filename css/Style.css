@@ -6,6 +6,11 @@
 body{
     background-color: #D2E8E3;
 }
+main{
+    display: flex;
+    overflow: hidden;
+}
+
 .Cuerpo{
     display: flex;
     justify-content: space-evenly;
@@ -13,12 +18,6 @@ body{
     
     
 } 
-.section{
-    padding-top: 40px;
-    text-align: center;
-    font-size: 32px;
-    background-color: #A7C3F0;
-}
 header {
     display: flex;
     justify-content: space-between;
@@ -26,6 +25,28 @@ header {
     background-color: #c2baa6;
     gap: 10px;
     height: 60px; }
+
+.singUp{
+    background-color: #839bc1;
+    border-radius: 5px;
+}
+.singUp:hover{
+    box-shadow: 5px 5px 10px;
+}
+.logIn{
+    background-color: rgba(32, 207, 119, 0.813);
+    border-radius: 5px;
+    }
+.logIn:hover{
+    box-shadow: 5px 5px 10px;
+}
+.logOut{
+    background-color:tomato;
+    border-radius: 5px;
+}
+.logOut:hover{
+    box-shadow: 5px 5px 10px;
+}
 
 .Cabecera {
     padding-left: 40px; }
@@ -72,55 +93,90 @@ input:hover{
 }
 .background {
     background-color: #F5ECD7; }
-    .titulo {
+.titulo {
     padding: 10px 40px; }
-    h2 {
+h2 {
     font-size: 1.8rem; }
-    section {
+.about {
     font-size: 1.4rem;
     border-radius: 5px;
     background-color: #EADCBD; }
-    #pcard {
+#pcard {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     overflow: hidden;
     height: 330px; }
-    #pcard .card {
+#pcard .card button img {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    }
+.card{
     width: 400px;
     height: 300px;
     overflow: hidden;
     border-radius: 5px;
     margin-top: 20px; }
-    #pcard .card:hover {
+#pcard .card:hover {
     box-shadow: 5px 5px 10px  #5a4343;}
-    .about {
-        display: flex;
-        flex-direction: column;
-        overflow: visible;
-        align-items: center;
-        margin: 100px 20px 100px 20px;
-        padding: 100px 15px 5px 200px;
-        height: auto;
-        align-items: center; }
-        .about p {
-        margin-bottom: 15px; }
-    .img-about {
-        position: absolute;
-        overflow: hidden;
-        width: 200px;
-        height: 200px;
-        border-radius: 80px;
-        margin-left: 40px; }
-        .img-about img {
+#carrito{
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    height: 150vh;
+    
+    }
+#carrito:hover{
+    width: 1200px;
+    overflow-y: scroll;
+}
+
+.cardDos{
+    overflow: hidden;
+    width: 200px;   
+    height: 100px;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 25px;
+    
+}
+.cardDos img{
+    width: 200px;
+    height: 100px;
+}
+.cardDos:hover{
+    transform: translate(-15px,0px);
+    transition: 500ms;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    overflow: visible;
+    align-items: center;
+    margin: 100px 20px 100px 20px;
+    padding: 100px 15px 5px 200px;
+    height: auto;
+    align-items: center; }
+.about p {
+    margin-bottom: 15px; }
+.img-about {
+    position: absolute;
+    overflow: hidden;
+    width: 200px;
+    height: 200px;
+    border-radius: 80px;
+    margin-left: 40px; }
+.img-about img {
     width: 200px;
     height: 200px; }
-    footer {
-        background-color: #c2baa6;
-        text-align: center; }
-        footer img {
-        width: 20px; }
-    footer .footer-login {
-        position: absolute;
-        bottom: 0;
-        width: 100%; }
+footer {
+    background-color: #c2baa6;
+    text-align: center; }
+footer img {
+    width: 20px; }
+footer .footer-login {
+    position: absolute;
+    bottom: 0;
+    width: 100%; }

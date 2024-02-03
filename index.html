@@ -10,20 +10,25 @@
     <meta name="description" content="Compra y lleva con envio gratis las mejores Fachas para tu peludito.">
     <meta name="author" content="Diicro">
     <meta name="copyright" content="Fachapets">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <link rel="stylesheet" href="./css/Style.css">
     <title>Home | Fachapets</title>
 </head>
 <body class="background">
     <header>
-        <h1 class="Cabecera " ><a href="#">FACHAPETS</a></h1>
-    
+        <h1 class="Cabecera" ><a href="#">FACHAPETS</a></h1>
+        <nav class="nav">
+            <ul id="btnProfile">
+                <li id="inSing"><button class="singUp" onclick="singUp()">Registrase</button></li>
+                <li id="inLog" ><button class="logIn" onclick="logIn()">Ingresar</button></li>
+                <li id="out"><button class="logOut" onclick="logOut()">Cerrar Sesión</button></li>
+            </ul>
+        </nav>
     </header>   
     <main>
+        <section class="rincipalPg">
         <h2 class="titulo"><a href="#">Products</a></h2>
-            <div id="pcard"> 
-                
-
-            </div> 
+        <div id="pcard"></div> 
             
 
         <h2 class="titulo"><a href="#">About Us</a></h2>
@@ -32,6 +37,9 @@
                 <p>En Fachapets nos encanta que nuestros amigos peluditos se vean elegantes, cómodos y con estilo. Por eso, creamos una marca que respeta la personalidad de tu mascota y le ofrece la moda que mejor le queda. No somos solo una tienda de ropa para mascotas, somos un equipo que busca el look perfecto para tu peludo.</p>
                 <p>La idea de Fachapets nació de nuestra propia experiencia como dueños de mascotas. Queríamos que nuestros peluditos lucieran ropa que reflejara su personalidad y su estilo, pero no encontrábamos nada que nos gustara. Todo era igual y aburrido. Nos dimos cuenta de que no estábamos solos en esta búsqueda. Muchos otros amantes de los animales también querían vestir a sus peludos con la mejor facha. Por eso, reunimos a un equipo de expertos en moda que se dedicó a crear las fachas más originales y divertidas para los peluditos.</p>
             </section>
+        </section>
+        <div id="carrito">                    
+        </div>
     
     </main>
     <footer>
@@ -40,5 +48,7 @@
         
     </footer>
  <script src="./js/index.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+ <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 </html>
